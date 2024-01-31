@@ -1,14 +1,7 @@
-#pragma once
-#include <Windows.h>
-
-#define GWorld 0x11781328
-#define VIEW_POINT 0x10F90A10
-
-
 namespace OFFSETS
 {
-    // tazz
-    uintptr_t UWORLD = 0x11781328;
+
+    uintptr_t UWORLD = 0x1133C4C8; // updated
     uintptr_t Viewpoint = 0x10F90A10;
 
     uintptr_t Gameinstance = 0x1D0;
@@ -21,7 +14,6 @@ namespace OFFSETS
     uintptr_t PersistentLevel = 0x30;
     uintptr_t LastSubmitTime = 0x358;
     uintptr_t LastRenderTimeOnScreen = 0x360;
-
     uintptr_t ActorCount = 0xA8;
     uintptr_t Cameramanager = 0x348;
     uintptr_t AActor = 0xA0;
@@ -30,14 +22,13 @@ namespace OFFSETS
     uintptr_t Revivefromdbnotime = 0x4AE0;
     uintptr_t TeamId = 0x10E0;
     uintptr_t ActorTeamId = 0x10e0;
-    // tazz
     uintptr_t IsDBNO = 0x872;
     uintptr_t LocalActorPos = 0x120;
-    uintptr_t ComponetToWorld = 0x230; 
+    uintptr_t ComponetToWorld = 0x230; // updated
     uintptr_t BoneArray = 0x608;
-    uintptr_t BoneCache = 0x658; 
+    uintptr_t BoneCache = 0x658; // updated
     uintptr_t Velocity = 0x168;
-    uintptr_t Private = 0x308; 
+    uintptr_t Private = 0x308; //PawnPrivate
     uintptr_t PlayerArray = 0x2A8;
     uintptr_t relativelocation = 0x120;
     uintptr_t UCharacterMovementComponent = 0x318;
@@ -48,6 +39,5 @@ namespace OFFSETS
     uintptr_t Wireframe = 0x194;
     uintptr_t SkeletalMeshes = 0x56e;
     uintptr_t PawnMaterials_ALL = 0x5A60;
+    uintptr_t FNamePool = 0x1150A280;
 }
-
-//discord.gg/moonud
