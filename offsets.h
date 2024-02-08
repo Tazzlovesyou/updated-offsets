@@ -1,43 +1,73 @@
-namespace OFFSETS
-{
-
-    uintptr_t UWORLD = 0x1133C4C8; // updated
-    uintptr_t Viewpoint = 0x10F90A10;
-
-    uintptr_t Gameinstance = 0x1D0;
-    uintptr_t LocalPlayers = 0x38;
-    uintptr_t PlayerController = 0x30;
-    uintptr_t LocalPawn = 0x338;
-    uintptr_t PlayerState = 0x2B0;
-    uintptr_t RootComponet = 0x198;
-    uintptr_t GameState = 0x158;
-    uintptr_t PersistentLevel = 0x30;
-    uintptr_t LastSubmitTime = 0x358;
-    uintptr_t LastRenderTimeOnScreen = 0x360;
-    uintptr_t ActorCount = 0xA8;
-    uintptr_t Cameramanager = 0x348;
-    uintptr_t AActor = 0xA0;
-    uintptr_t CurrentActor = 0x8;
-    uintptr_t Mesh = 0x318;
-    uintptr_t Revivefromdbnotime = 0x4AE0;
-    uintptr_t TeamId = 0x10E0;
-    uintptr_t ActorTeamId = 0x10e0;
-    uintptr_t IsDBNO = 0x872;
-    uintptr_t LocalActorPos = 0x120;
-    uintptr_t ComponetToWorld = 0x230; // updated
-    uintptr_t BoneArray = 0x608;
-    uintptr_t BoneCache = 0x658; // updated
-    uintptr_t Velocity = 0x168;
-    uintptr_t Private = 0x308; //PawnPrivate
-    uintptr_t PlayerArray = 0x2A8;
-    uintptr_t relativelocation = 0x120;
-    uintptr_t UCharacterMovementComponent = 0x318;
-    uintptr_t entity_actor = 0x310;
-    uintptr_t bIsReloadingWeapon = 0x360;
-    uintptr_t GlobalAnimRateScale = 0xA80;
-    uintptr_t CurrentWeapon = 0xa20;
-    uintptr_t Wireframe = 0x194;
-    uintptr_t SkeletalMeshes = 0x56e;
-    uintptr_t PawnMaterials_ALL = 0x5A60;
-    uintptr_t FNamePool = 0x1150A280;
-}
+[+] : UWorld -> 0x11770D88
+      [+] : GObjects -> 0x11749AC0
+      [+] : GNames -> 0x11944BC0
+      [+] : ACharacter::Mesh -> 0x318
+      [+] : AActor::RootComponent -> 0x198
+      [+] : AActor::CustomTimeDilation -> 0x68
+      [+] : UPlayer::PlayerController -> 0x30
+      [+] : UGameInstance::LocalPlayers -> 0x38
+      [+] : UWorld::OwningGameInstance -> 0x1D0
+      [+] : APlayerState::PawnPrivate -> 0x308
+      [+] : UWorld::GameState -> 0x158
+      [+] : AGameStateBase::PlayerArray -> 0x2A8
+      [+] : AFortPickup::PrimaryPickupItemEntry -> 0x350
+      [+] : FFortItemEntry::ItemDefinition -> 0x18
+      [+] : UFortItemDefinition::Tier -> 0x11B
+      [+] : UItemDefinitionBase::ItemName -> 0x30
+      [+] : APlayerController::PlayerCameraManager -> 0x348
+      [+] : APlayerController::InputPitchScale -> 0x53C
+      [+] : APlayerController::InputYawScale -> 0x538
+      [+] : APlayerController::InputRollScale -> 0x540
+      [+] : APlayerCameraManager::DefaultFOV -> 0x2A4
+      [+] : APlayerCameraManager::ViewPitchMin -> 0x2384
+      [+] : APlayerCameraManager::ViewPitchMax -> 0x2388
+      [+] : APlayerCameraManager::ViewYawMin -> 0x238C
+      [+] : APlayerCameraManager::ViewYawMax -> 0x2390
+      [+] : APlayerCameraManager::ViewRollMin -> 0x2394
+      [+] : APlayerCameraManager::ViewRollMax -> 0x2398
+      [+] : APlayerCameraManager::ViewTarget -> 0x320
+      [+] : ABuildingWeakSpot::bActive -> 0x2C0
+      [+] : ABuildingWeakSpot::HitCount -> 0x2C4
+      [+] : ABuildingContainer::bAlreadySearched -> 0xD92
+      [+] : ULocalPlayer::ViewportClient -> 0x78
+      [+] : AFortPawn::CurrentWeapon -> 0xA20
+      [+] : AFortPawn::PreviousWeapon -> 0xA28
+      [+] : AFortPawn::CurrentWeaponList -> 0xA30
+      [+] : AFortPlayerPawn::CurrentVehicle -> 0x2880
+      [+] : AFortWeapon::WeaponData -> 0x4D0
+      [+] : AFortWeapon::CurrentReticleColor -> 0xD28
+      [+] : AFortWeapon::AmmoCount -> 0xE1C
+      [+] : AFortWeapon::ChargeTime -> 0xE30
+      [+] : AFortWeapon::AccumulatedChargeTime -> 0xE34
+      [+] : AFortWeapon::LastChargeTime -> 0xE38
+      [+] : AFortWeapon::bIsReloadingWeapon -> 0x368
+      [+] : AFortWeapon::bIsChargingWeapon -> 0x369
+      [+] : AFortWeapon::bIsEquippingWeapon -> 0x350
+      [+] : AFortWeapon::TimeToEquip -> 0x340
+      [+] : AFortWeapon::bIgnoreTryToFireSlotCooldownRestriction -> 0x13A9
+      [+] : UMaterial::Wireframe -> 0x1B8
+      [+] : UMaterial::BlendMode -> 0x129
+      [+] : UMaterialInstance::ScalarParameterValues -> 0x160
+      [+] : UMaterialInstance::VectorParameterValues -> 0x170
+      [+] : AWorldSettings::WorldGravityZ -> 0x310
+      [+] : UFortClientSettingsRecord::HUDScale -> 0x4C0
+      [+] : UFortClientSettingsRecord::InitialHUDScale -> 0x4C8
+      [+] : UFortClientSettingsRecord::ScopedSlow -> 0x54C
+      [+] : UFortClientSettingsRecord::TargetingSlow -> 0x548
+      [+] : UFortClientSettingsRecord::MouseSensitivity -> 0x574
+      [+] : UFortClientSettingsRecord::MouseSensitivityX -> 0x578
+      [+] : UFortClientSettingsRecord::MouseSensitivityY -> 0x57C
+      [+] : UFortClientSettingsRecord::MusicVolume -> 0x900
+      [+] : UFortClientSettingsRecord::MasterVolume -> 0x8FC
+      [+] : UFortClientSettingsRecord::FOVMinimum -> 0x994
+      [+] : UFortClientSettingsRecord::FOVMaximum -> 0x998
+      [+] : UFortClientSettingsRecord::bAnonymousMode -> 0x925
+      [+] : USceneComponent::RelativeRotation -> 0x138
+      [+] : USceneComponent::RelativeLocation -> 0x120
+      [+] : USceneComponent::ComponentVelocity -> 0x168
+      [+] : USceneComponent::RelativeScale3D -> 0x150
+      [+] : USceneComponent::bAbsoluteLocation -> 0x180
+      [+] : USceneComponent::PhysicsVolume -> 0xA8
+      [+] : USkinnedMeshComponent::bForceWireframe -> 0x75E
+      [+] : USkinnedMeshComponent::SkeletalMesh -> 0x540
+      [+] : AFortPlayerStateAthena::TeamIndex -> 0x10F1
