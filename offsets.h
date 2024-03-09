@@ -1,8 +1,7 @@
-[1] UWorld: 0x117B7E88
-[2] Gnames: 0x1198BD00
-[3] Gobjects: 0x11790BC0
+[+] uworld = 0x10C628D8,
+[+] game_state = 0x160,
+[+] game_instance = 0x1d8,
+[+] team_index = 0x1251,
 
-
-//discord.gg/moonud
-
-// creds to enigma i cba dumping <3
+discord.gg/moonware
+https://moonwarecheats.sellpass.io/
